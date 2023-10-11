@@ -3,19 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Light Black Screen</title>
+    <title>GoodLuck Family</title>
     <style>
-        /* Reset default margin and padding for the entire page */
+        /* Add your CSS styles here */
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: rgba(0, 0, 0, 0.922); /* Light black background color */
-            overflow: hidden; /* Hide page overflow to prevent scrollbars */
         }
+        header {
+            background-color: #1900ffd2;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        header a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+        }
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+        header .logo img {
+            width: 40px; /* Set your desired width */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 10px; /* Add some spacing between logo and text */
+        }
+        header .company-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        header .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        header .nav-links a {
+            margin-right: 15px;
+        }
+        .right-links {
+            display: flex;
+            align-items: center;
+        }
+        .right-links a {
+            margin-right: 15px;
+        }
+        /* You can add more styles as needed */
     </style>
 </head>
 <body>
-    <!-- Your content goes here -->
+    <header>
+        <div class="logo">
+            <img src="logo.png.png" alt="GoodLuckAI Logo"> <!-- Replace with your logo image path -->
+            <div class="company-name">Goodluck</div>
+        </div>
+        
+           
+        </div>
+        <div class="right-links">
+            
+            
+                </a>
+            <a href="https://workplacegoodluck.github.io/goodluckfamilynav/">
+                <button class="glass-button">menu</button>
+            </a>
+            
+
+        
+        </div>
+    </header>
+    <main>
+        <!-- Your chatbot interface or content can go here -->
+    </main>
 </body>
 </html>
 
@@ -24,126 +86,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black Box on Light Black Background</title>
+    <title>Your AI IT Company</title>
     <style>
-        /* Reset default margin and padding for the entire page */
+        /* Add your CSS styles here */
         body {
             margin: 0;
             padding: 0;
-            background-color: rgba(0, 0, 0, 0.832); /* Light black background color */
-            overflow: hidden; /* Hide page overflow to prevent scrollbars */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            overflow: hidden;
+            position: relative; /* Ensure relative positioning for the content */
         }
-
-        /* Style for the overlay box */
-        .overlay-box {
-            background-color: rgba(0, 0, 0, 0.7); /* Slightly lighter black background color */
-            width: 50%; /* Adjust the width of the box */
-            padding: 20px; /* Add padding to the box content */
-            color: #fff; /* Text color in the box */
-            text-align: center;
-            border: 2px solid #000; /* Add a border for the black box */
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the video covers the entire viewport */
         }
-
-        /* Style for the "Close" button */
-        .close-button {
-            display: block;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            padding: 10px 20px;
-            background-color: #000;
+        header {
+            position: relative; /* Ensure the header is positioned on top of the video */
+            background-color: rgba(0, 0, 0, 0.321); /* Add a semi-transparent background for better contrast */
             color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-
-        .close-button:hover {
-            background-color: #000000d8; /* Darker background on hover */
-        }
-    </style>
-</head>
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black Box on Light Black Background</title>
-    <style>
-        /* Reset default margin and padding for the entire page */
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: rgba(0, 0, 0, 0.5); /* Light black background color */
-            overflow: hidden; /* Hide page overflow to prevent scrollbars */
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            height: 100vh;
+            padding: 10px 20px;
+            z-index: 2; /* Place header above video */
         }
-
-        /* Style for the overlay box */
-        .overlay-box {
-            background-color: rgba(0, 0, 0, 0.7); /* Slightly lighter black background color */
-            width: 50%; /* Adjust the width of the box */
-            padding: 20px; /* Add padding to the box content */
-            color: #fff; /* Text color in the box */
-            text-align: center;
-            border: 2px solid #000; /* Add a border for the black box */
+        /* Additional styles for your content */
+        .content {
             position: relative;
+            z-index: 1; /* Place it above the video */
+            text-align: center;
+            color: #671089;
+            padding: 50px;
         }
-
-        /* Style for the "Close" button */
-        .close-button {
-            display: block;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            padding: 10px 20px;
-            background-color: #00000000;
-            color: #fff;
+        .glass-button {
+            background-color: rgba(179, 167, 167, 0.2); /* Transparent white background */
+            padding: 10px 25px;
             border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            color: #000000;
             cursor: pointer;
-            text-decoration: none; /* Remove default link styling */
+            transition: background-color 0.3s;
         }
-
-        .close-button:hover {
-            background-color: #000000; /* Darker background on hover */
+        .transparent {
+            background-color: #00000000;
+            padding: 15px 30px;
+            border: none;
+            color: #ffffff;
+            
+        }
+        .glass-button:hover {
+            background-color: rgba(255, 255, 255, 0.521); /* Lighter transparent background on hover */
         }
     </style>
 </head>
 <body>
-    <!-- Overlay box -->
-    <div class="overlay-box">
-      
-        <h2>Site Navigation</h2>
-        <ul>
-            <li>About us !</li>
-            <hr><hr>
-            <li>Our documentations</li>
-            <hr><hr>
-            <li>Projects</li>
-            <hr><hr>
-            <li>Founding team</li>
-            <hr><hr>
-            <li>Register/Login Join (Employ)</li>
-            <hr><hr>
-            <li>Register/Login as Admin</li>
-            <hr><hr>
-            <li>Contact us</li>
-            <hr><hr>
-        </ul>
-        <a class="close-button" href="https://workplacegoodluck.github.io/Goodluck-Family/">Close</a>
+    <video autoplay muted loop id="video-background">
+        <source src="pexels_videos_1851190 (2160p).mp4" type="video/mp4">
+        <!-- Add additional sources for other video formats -->
+        Your browser does not support the video tag.
+    </video>
+    <header>
+        <!-- Your header content goes here -->
+        <nav>
+           
+        </nav>
+    </header>
+    <div class="content">
+        <!-- Your website content goes here -->
+        <h2>Welcome to our Family.</h2>
+        <p>Goodluck: More than a Company, We're a Family. Welcome Home!</p>
+        <button class="glass-button">Register/Login</button>
     </div>
 </body>
 </html>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 
 
 
